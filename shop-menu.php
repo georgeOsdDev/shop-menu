@@ -41,7 +41,8 @@ class SM{
 		wp_localize_script( 'shop-menu-js', 'SM_Setting', array(
 				'ajaxurl' => admin_url('admin-ajax.php'),
 				'action' => 'get_menu_ajax',
-				'next_page' => '1'
+				'next_page' => '1',
+				'next_page_per_category' => (object) array()
 		));
 	}
 
